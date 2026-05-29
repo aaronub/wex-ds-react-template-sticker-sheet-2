@@ -2,7 +2,7 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [configure-vite]
+    branches: [main]
   workflow_dispatch:   # optional: manual redeploy from Actions tab
 
 permissions:
