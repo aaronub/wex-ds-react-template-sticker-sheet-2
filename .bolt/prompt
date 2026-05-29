@@ -1,0 +1,4 @@
+1, For Tree component filter variant implementation guide, <WexTree.Filter> needs to be wrapped within <WexTree.Header> like this:
+  <WexTree.Header>
+    <WexTree.Filter placeholder="Search files..." />
+  </WexTree.Header>

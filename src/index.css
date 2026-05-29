@@ -1,0 +1,20 @@
+@import "tailwindcss";
+@import "@wex/design-tokens/theme.css";
+@import "@wex/components-react/shadcn-cli.css";
+@import "@wex/components-react/theme.css";
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--wex-font-family-sans), ui-sans-serif, system-ui, sans-serif;
+  }
+
+  /* Only prevent Radix scroll-lock shift when right-side Sheet is open */
+  body:has(.bolt-right-sheet[data-state="open"]) {
+    padding-right: 0 !important;
+    overflow: auto !important;
+  }
+}
