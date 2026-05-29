@@ -27,4 +27,5 @@ export default defineConfig({
       "use-sync-external-store/shim/with-selector",
     ],
   },
+    base: "/wex-ds-react-template-sticker-sheet/"
 });
